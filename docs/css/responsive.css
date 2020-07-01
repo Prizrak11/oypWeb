@@ -1,0 +1,19 @@
+@media only screen and (max-width:768px) {
+    html{
+        margin: 0;
+        width: 100%
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    .carousel-item{
+        height: auto;
+    }
+    .services-main{
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+    .card{
+        width: 150px;
+    }
+}
