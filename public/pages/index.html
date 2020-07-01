@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Config-->
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <!--Page info-->
+    <title>O&amp;P | Inicio</title>
+    <link rel="icon" href="../resources/brand-icon.svg"/>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <!--Scroll Reveal--><script src="https://unpkg.com/scrollreveal"></script>
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+    <!--FontAweome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet"/>
+    <!--Custom css-->
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
   </head>
   <body>
+    <!--Nav menu-->
+    <nav class="nav-main"><a href="./index.html"><img src="../resources/brand-icon.svg" alt="brand-icon"/>
+        <h1>O<span>&</span>P</h1></a>
+      <ul class="nav-links">
+        <li><a href="./us.html">Nosotros</a></li>
+        <li><a href="./services.html">Servicios</a></li>
+        <li><a href="./contact.html">Contáctanos</a></li>
+      </ul>
+      <hr/>
+    </nav>
+    <div class="contenido"> 
+      <!--Carousel-->
+      <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="../resources/showcase.jpg" class=" w-100" alt="..."></div>
+          <div class="carousel-item"><img src="../resources/showcase2.jpg" class=" w-100" alt="..."></div>
+          <div class="carousel-item"><img src="../resources/showcase3.jpg" class=" w-100" alt="..."></div>
+        </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><i class="fas fa-chevron-left"></i></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+      </div>
+      <!--Text 1-->
+      <p class="mini-us"><i class="fas fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error amet repellat aut? Optio quia ipsam assumenda facilis laboriosam quas pariatur beatae, ratione cumque maxime quaerat officiis sint? Quibusdam placeat minima tempora consequuntur pariatur voluptates eum ea dolores veritatis. Molestias numquam nulla voluptatibus, excepturi reprehenderit tempora veniam vel <i class="fas fa-quote-right"></i></p>
+      <!--Services -->
+      <div class="part-title">
+        <h1>sᴇʀᴠɪᴄɪᴏs</h1>
+        <hr/>
+      </div>
+      <div class="services-main">
+        <div>
+          <div class="card">
+            <div class="card__side card__side--back">
+              <h4 class="card__heading">Eye detect</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic expedita commodi cumque numquam animi dolores omnis repellendus obcaecati nulla.</p><a class="hvr-grow" href="./services.html#eyeDetect">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card__side card__side--front">
+              <p class="card__subject">Eye detect</p>
+              <p class="card__icon"><img src="../resources/eyeDetect.svg" alt=""/></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card__side card__side--back">
+              <h4 class="card__heading">Estudios de seguridad</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic expedita commodi cumque numquam animi dolores omnis repellendus obcaecati nulla.</p><a class="hvr-grow" href="./services.html#estudios">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card__side card__side--front">
+              <p class="card__subject">Estudios de seguridad</p>
+              <p class="card__icon"><img src="../resources/security.svg" alt=""/></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card__side card__side--back">
+              <h4 class="card__heading">Análisis y Asesoría</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic expedita commodi cumque numquam animi dolores omnis repellendus obcaecati nulla.</p><a class="hvr-grow" href="./services.html#asesoria">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card__side card__side--front">
+              <p class="card__subject">Análisis y Asesoría</p>
+              <p class="card__icon"><img src="../resources/asesoria.svg" alt=""/></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card__side card__side--back">
+              <h4 class="card__heading">Test Psicometrico</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic expedita commodi cumque numquam animi dolores omnis repellendus obcaecati nulla.</p><a class="hvr-grow" href="./services.html#psicometrico">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card__side card__side--front">
+              <p class="card__subject">Test Psicometrico</p>
+              <p class="card__icon"><img src="../resources/psicometrico.svg" alt=""/></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Text 2-->
+      <p class="mini-us"><i class="fas fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error amet repellat aut? Optio quia ipsam assumenda facilis laboriosam quas pariatur beatae, ratione cumque maxime quaerat officiis sint? Quibusdam placeat minima tempora consequuntur pariatur voluptates eum ea dolores veritatis. Molestias numquam nulla voluptatibus, excepturi reprehenderit tempora veniam vel <i class="fas fa-quote-right"></i></p>
+      <!--Companies slider-->
+      <div class="part-title">
+        <h1>ᴀʟɪᴀᴅos</h1>
+        <hr/>
+      </div>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide"><img src="../resources/company-logo.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo2.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo3.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo4.svg" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo5.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo2.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo3.png" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo4.svg" alt="company-log"/></div>
+          <div class="slide"><img src="../resources/company-logo5.png" alt="company-log"/></div>
+        </div>
+      </div>
+      <!--Text 3-->
+      <p class="mini-us"><i class="fas fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error amet repellat aut? Optio quia ipsam assumenda facilis laboriosam quas pariatur beatae, ratione cumque maxime quaerat officiis sint? Quibusdam placeat minima tempora consequuntur pariatur voluptates eum ea dolores veritatis. Molestias numquam nulla voluptatibus, excepturi reprehenderit tempora veniam vel <i class="fas fa-quote-right"></i></p>
+    </div>
+    <!-- Footer-->
+    <footer class="footer-main">
+      <div class="footer-info"><img src="../resources/brand-icon.svg" alt="brand-icon"/><a href="./index.html">
+          <h1>O&P <span>| </span>Risk Advisors</h1></a>
+        <div class="footer-social"><a href="https://www.facebook.com/OyP.RiskAdvisors" target="_blank"><i class="fab fa-facebook-square hvr-grow"></i></a><a href="https://www.instagram.com/oyp_riskadvisors/?hl=es-la" target="_blank"><i class="fab fa-instagram hvr-grow"></i></a><i class="far fa-envelope hvr-grow"></i></div>
+      </div>
+      <hr/>
+      <div class="footer-sections">
+        <div class="footer-section footer-services">
+          <h2>Servicios</h2>
+          <div class="footer-services"><a href="./services.html#eyeDetect">Eye detect</a><a href="./services.html#capacitaciones">Capacitaciones</a><a href="./services.html#asesoria">Análisis y asesoria</a><a href="./services.html#estudios">Estudios de seguridad</a><a href="./services.html#psicometrico">Test psicometrico</a><a href="./services.html#proveedores">Inspección de proveedores</a></div>
+        </div>
+        <div class="footer-section">
+          <h2>Páginas</h2><a href="./index.html">Inicio</a><a href="./us.html">Nosotros</a><a href="./services.html">Servicios</a><a href="./contact.html">Contactanos</a>
+        </div>
+        <div class="footer-section">
+          <h2>Contáctanos</h2><a href="https://www.google.com/maps?ll=4.606481,-74.077293&amp;z=17&amp;t=m&amp;hl=es-ES&amp;gl=US&amp;mapclient=embed&amp;q=Cl.+16a+%2313-66+Oficina+402+Bogot%C3%A1" target="_blank"><i class="fas fa-map-marker-alt"></i> Calle 16A 13-66 Oficina 402 - Bogotá D.C</a><a href=""><i class="far fa-envelope"></i> info@oypriskadvisors.com</a><a href=""><i class="fas fa-phone"></i> 3015712403 - 3213711600</a><a href="https://api.whatsapp.com/send?phone=573213711600&amp;text=%C2%A1Hola!%20,%20me%20gustar%C3%ADa%20poder%20contactarme%20con%20alguien%20de%20OyP%20Risk%20Advisors,%20muchas%20gracias"><i class="fab fa-whatsapp"></i> 3015712403 - 3213711600</a>
+        </div>
+      </div>
+      <div class="footer-extra"><a href="./index.html">&copy; 2020 O&P Risk Advisors    </a><a href="./privacy-policy.html">Privacy Policy  </a><a href="./confidentiality.html">Acerdo Confidencialidad</a></div>
+    </footer>
+    <!--Bootstrap scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Custom JS-->
     <script src="../js/main.js"></script>
   </body>
 </html>
