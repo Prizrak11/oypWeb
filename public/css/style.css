@@ -35,6 +35,7 @@ li,
 i {
     font-weight: 500;
     color: var(--color1);
+    font-size: 2.2vh;
 }
 body {
     position: relative;
@@ -61,7 +62,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    font-size: 17px;
+    font-size: 2.2vh;
     padding: 1.8em 2em;
     position: sticky;
     top: 0;
@@ -73,15 +74,15 @@ body {
     display: flex;
 }
 .nav-main a img {
+    height: 5vh;
+    margin-top: 1.6em;
     cursor: pointer;
-    height: 40px;
     width: auto;
-    margin-top: 1.7em;
 }
 .nav-main a h1 {
     cursor: pointer;
     margin-left: 0.2em;
-    font-size: 40px;
+    font-size: 5vh;
     color: var(--brand-color);
 }
 .nav-main a h1 span {
@@ -94,20 +95,24 @@ body {
     flex: 1;
     direction: rtl;
 }
+.nav-links{
+    font-size: 2.2vh;
+    margin: 0;
+    padding:1em 2em
+}
 .nav-links li {
-    margin-top: 1em;
-    border-bottom: 4px solid rgba(255, 255, 255, 0);
+    border-bottom: .5vh solid rgba(255, 255, 255, 0);
     transition: 0.25s ease-in;
     background-color: none;
 }
 .nav-links li:hover {
     cursor: pointer;
-    border-bottom: 4px solid var(--color1);
+    border-bottom: .5vh solid var(--color1);
     text-shadow: 0px 0px 35px var(--color1);
     background-color: rgba(224, 224, 224, 0.5);
 }
 .nav-links li a{
-    padding: 15px;
+    padding: 1.1em .7em
 }
 #nav-menu{
     display: none;
@@ -115,24 +120,26 @@ body {
 
 /** Footer */
 .footer-main {
+    height: 100%;
     box-shadow: var(--shadow);
     background-color: var(--main-color);
-    padding: 1em;
+    
 }
 .footer-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:0 .5em;
 }
 .footer-main .footer-info img {
-    padding-bottom: 10px;
     cursor: pointer;
-    height: 40px;
+    height: 4vh;
     width: auto;
+    padding: 0 1vw;
 }
 .footer-info h1 {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2.5vh;
     color: var(--brand-color);
 }
 .footer-info h1 span {
@@ -146,7 +153,7 @@ body {
     direction: rtl;
 }
 .footer-info .footer-social i {
-    font-size: 25px;
+    font-size: 3vh;
     margin-left: 1em;
     color: var(--color1);
     cursor: pointer;
@@ -170,11 +177,11 @@ body {
 }
 .footer-sections .footer-section h2 {
     cursor: default;
-    font-size: 15px;
+    font-size: 2.4vh;
     color: var(--color2);
 }
 .footer-sections .footer-section a {
-    font-size: 13px;
+    font-size: 1.8vh;
     text-align: center;
 }
 .footer-sections .footer-section a:hover {
@@ -183,7 +190,7 @@ body {
 .footer-sections .footer-section .footer-services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
+    column-gap: 2vw;
 }
 .footer-sections .footer-section .footer-services a {
     text-align: center;
@@ -191,7 +198,6 @@ body {
 /*last part*/
 .footer-extra {
     color: var(--brand-color);
-    font-size: 10px;
     text-align: center;
     margin: 0.5em 8em -2em 8em;
     cursor: default;
@@ -199,7 +205,9 @@ body {
     justify-content: center;
 }
 .footer-extra a {
-    margin: 0.6em 0.6em;
+    margin: 0.6em 0.6em 0 0.6em;
+    font-size: 1.5vh;
+    padding:1em 3em;
 }
 .footer-extra a:hover {
     color: #4a72b2;
@@ -215,7 +223,7 @@ h1.info-title {
     margin: 0;
     background-color: var(--color2);
     color: var(--main-color);
-    font-size: 40px;
+    font-size: 5vh;
     padding: 1.3em 0.2em;
     text-align: center;
     box-shadow: var(--shadow);
@@ -230,12 +238,15 @@ h1.info-title {
 .info-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5em 0;
+    margin: 15vh 0;
 }
 .info-card img {
     height: 40vh;
     grid-row: 1/4;
     justify-self: center;
+}
+.info-card h2{
+    font-size: 4vh;
 }
 .info-card.reverse {
     direction: rtl;
@@ -250,33 +261,34 @@ h1.info-title {
 }
 .info-card .info-extra .subtitle{
     color: var(--color2);
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.3em;
 }
 /**!Main*********************************************************************************/
 /** Carousel */
 .carousel-item {
-    height: 77vh;
+    height: 65vh;
 }
 .carousel-control-prev i,
 .carousel-control-next i {
     font-size: 2em;
-    color: var(--color2);
+    color: var(--color1);
 }
 .carousel-item img {
-    height: 100%;
-    padding: 1em 8em;
+    height: 80vh;
+    padding: 0;
+    margin-top:-4vh;
 }
 /** Mini-Us */
 .mini-us {
     cursor: default;
     text-align: center;
-    margin: 6em 7em;
-    font-size: 19px;
+    margin: 15vh 9vw;
+    font-size: 2.5vh;
     color: var(--color1);
 }
 .mini-us i {
-    font-size: 25px;
+    font-size: 3vh;
     margin: 0 0.5em;
     color: var(--color2);
 }
@@ -285,25 +297,24 @@ h1.info-title {
     position: absolute;
     z-index: 10;
     display: flex;
-    justify-content: space-between;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1vw;
+    padding-right: 1vw;
     color: rgba(0, 51, 102, 0.6);
-    transform: translateY(-5px);
 }
 .part-title h1 {
-    font-size: 0.8em;
+    font-size: 1.5vh;
 }
 .part-title hr {
+    margin-top: 2vh;
     width: 85vw;
     border-color: rgba(0, 51, 102, 0.6);
-    margin-left: 0.3em;
+    margin-left: 0.3vw;
 }
 
 /** Services Icons */
 .services-main {
     background: var(--main-color);
-    height: 70vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -313,8 +324,8 @@ h1.info-title {
 }
 /** Cards */
 .card {
-    height: 22em;
-    width: 16em;
+    height: 50vh;
+    width: 90%;
     -moz-perspective: 200rem;
     perspective: 200rem;
     cursor: default;
@@ -348,7 +359,6 @@ h1.info-title {
     background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     border-radius: 2px;
     transform: rotateY(180deg);
-    font-size: 0.7em;
 }
 .card__side--back a {
     cursor: pointer;
@@ -372,10 +382,10 @@ h1.info-title {
 .card__heading {
     color: var(--main-color);
     flex: 1;
-    font-size: 1.5em;
 }
 .card__side--back p {
     color: var(--main-color);
+    font-size: 1.8vh
 }
 /** Slider Enterprise */
 @-webkit-keyframes scroll {
@@ -384,8 +394,8 @@ h1.info-title {
         transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-400px * 5));
-        transform: translateX(calc(-400px * 5));
+        -webkit-transform: translateX(calc(-40vw * 5));
+        transform: translateX(calc(-40vw * 5));
     }
 }
 @keyframes scroll {
@@ -394,13 +404,13 @@ h1.info-title {
         transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-400px * 5));
-        transform: translateX(calc(-400px * 5));
+        -webkit-transform: translateX(calc(-40vw * 5));
+        transform: translateX(calc(-40vw * 5));
     }
 }
 .slider {
     background: var(--main-color);
-    height: 200px;
+    height: 32vh;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -422,9 +432,9 @@ h1.info-title {
         rgba(255, 255, 255, 0) 100%
     );
     content: "";
-    height: 200px;
+    height: 32vh;
     position: absolute;
-    width: 200px;
+    width: 32vh;
     z-index: 2;
 }
 .slider::after {
@@ -442,17 +452,16 @@ h1.info-title {
     animation: scroll 40s linear infinite;
     display: -webkit-box;
     display: flex;
-    width: calc(400px * 4);
+    width: calc(40vw * 5);
 }
 /*My Decoration*/
 .slider {
     padding: 1.5em 0;
 }
 .slider .slide img {
-    padding: 0.5em 3em;
-    margin-top: 1em;
-    height: 110px;
-    width: 400px;
+    padding: 5vh 5vw;
+    height: 25vh;
+    width: 40vw;
 }
 /**!Privacy*********************************************************************************/
 .privacy h1 {
@@ -495,9 +504,17 @@ h1.info-title {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.contact.gmap_canvas {
-    overflow: hidden;
-    background: none;
+.contact .maps {
+    position: relative;
+    height: 60vh;
+    width: 90%;
+}
+.contact .maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .contact .info {
     margin-top: 1em;
@@ -509,7 +526,7 @@ h1.info-title {
 }
 .contact .info h2 {
     color: var(--color2);
-    font-size: 25px;
+    font-size: 3.5vh;
 }
 .contact .info > a {
     padding: 0.5em 0;

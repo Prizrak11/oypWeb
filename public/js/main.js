@@ -11,8 +11,12 @@ ScrollReveal().reveal(`.tab`,{delay:"400", distance:"5em", origin:"bottom"})
 ScrollReveal().reveal('.info-description',{delay:"100", distance:"5em", origin:"top"});
 ScrollReveal().reveal('.values',{delay:"200", distance:"10em", origin:"right"});
 /* Responsive Design */
+let menuVar = document.querySelector(`.nav-links`)
+let menuActive = false
+let bodyToggle = false
 document.querySelector(`#nav-menu`).addEventListener(`click`,()=>{
-    document.querySelector(`.nav-links`).classList.toggle(`hide`)
+    menuActive = true
+    menuVar.classList.toggle(`hide`)
 })
 $(function() {
     var $body = $(document);
@@ -23,3 +27,15 @@ $(function() {
         }
     });
 }); 
+window.onscroll = () => {
+    menuVar.classList.remove(`hide`)
+}
+document.querySelector(`body`).addEventListener(`click`, ()=>{
+    bodyToggle = true
+})
+if(menuActive && bodyToggle){
+    menuVar.classList.remove(`hide`)
+}
+$('.carousel').carousel({
+  interval: 2500
+})
